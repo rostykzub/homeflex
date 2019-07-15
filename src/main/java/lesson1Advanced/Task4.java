@@ -1,4 +1,4 @@
-package lesson2Advanced;
+package lesson1Advanced;
 
 /*
 Семантическое версионирование

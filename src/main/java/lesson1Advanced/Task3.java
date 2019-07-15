@@ -1,4 +1,4 @@
-package lesson2Advanced;
+package lesson1Advanced;
 
 /* Мое имя
 Вывести на экран любой символ пирамидкой в обратную сторону высотой в 10 строк.

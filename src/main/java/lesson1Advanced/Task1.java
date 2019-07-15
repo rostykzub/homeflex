@@ -1,4 +1,4 @@
-package lesson2Advanced;
+package lesson1Advanced;
 
 public class Task1 {
     /* Минимум n чисел
