@@ -1,2 +1,2 @@
-Checkout my homework
+Checkout my homework\n
 This text if for my 2nd commit
