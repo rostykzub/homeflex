@@ -18,7 +18,16 @@ System.out.println, System.out.print можно использовать тол�
 public class Task2 {
 
     public static void main(String[] args) {
-        String s = "*";
-        System.out.println(s);
+        String s = "\\";
+        String n = "\\";
+        int i=0;
+        while (i!=9){
+            System.out.println(s); //1 time using System.out.println
+            i++;
+            s +=n;
+        }
+        if (i==9){
+            System.out.print(s); // 1 time using System.out.print :)
+        }
     }
 }
