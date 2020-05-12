@@ -9,8 +9,11 @@ System.out.println, System.out.print можно использовать тол�
 public class Task2 {
 
     public static void main(String[] args) {
-        String s = "Ross ";
+        printMyNamex10();
+    }
 
+    public static void printMyNamex10 (){
+        String s = "Ross ";
             for (int j=0;j<5;j++) {
 
                 for (int i=0;i<10;i++){
