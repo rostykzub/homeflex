@@ -1,6 +1,6 @@
 package lesson1;
 
-import sun.jvm.hotspot.HelloWorld;
+//import sun.jvm.hotspot.HelloWorld;
 
 /**
  * Реализовать функцию, которая принимает строку и возвращает ее же в обратном виде
@@ -12,6 +12,7 @@ public class Task5 {
         System.out.println(reverse("Lubko zarkyi karetku"));
 
     }
+
    public static String reverse(String str) {
         int i = (str.length()-1);
        //System.out.println(i);

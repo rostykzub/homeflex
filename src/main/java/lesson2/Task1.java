@@ -25,9 +25,9 @@ public class Task1 {
 
     public static void main(String[] args) {
 
-        Task1 Ross = new Task1(11,"Ross","Child");
+        //Task1 Ross = new Task1(11,"Ross","lolka");
 
-        Ross.setAge(150);
+       /* Ross.setAge(150);
         System.out.println(Ross.getAge());
         Ross.setAge(-20);
         System.out.println(Ross.getAge());
@@ -37,10 +37,13 @@ public class Task1 {
         System.out.println(Ross.getName());
         Ross.setName("rostylav");
         System.out.println(Ross.getName());
-        Ross.setAge(55);
+        Ross.setAge(66);
         System.out.println(Ross.getAgeGroup());
-        Ross.setAgeGroup("NULL");
-        System.out.println(Ross.getAgeGroup());
+        Ross.setAgeGroup("not defined");
+        System.out.println(Ross.getAgeGroup());*/
+        //Ross.setAge(33);
+        //System.out.println(Ross.getAgeGroup());
+        System.out.println(age);
 
     }
 
@@ -55,10 +58,10 @@ public class Task1 {
         }
 
     private String ageGroupSelector() {  //create a method - selector of the correct age group.
-            if (this.getAge()<15){
+            if (this.getAge()<=15){
                 ageGroup="child";
             }
-            else if (this.getAge()>14 && this.getAge()<26){
+            else if (this.getAge()>15 && this.getAge()<26){
                ageGroup="student";
             }
             else if (this.getAge()>25 && this.getAge()<66){
@@ -66,6 +69,9 @@ public class Task1 {
             }
             else if(this.getAge()>=66){
                 ageGroup="pensioner";
+            }
+            else {
+                ageGroup="not defined";
             }
         return ageGroup;
     }
@@ -84,7 +90,7 @@ public class Task1 {
     public void setAge ( int age){
         if ((age >= 0) && (age <= 100)){
             this.age = age;
-            this.ageGroupSelector();// - if ageGroup setter was called, I'm also calling my Group selector.
+            this.ageGroupSelector();// - if age setter was called, I'm also calling my Group selector.
         }
         else {
             System.out.println("Age should be bigger then 0 and less then 100");

@@ -9,7 +9,7 @@ package lesson1Advanced;
 Про семантическое версионирование почитать можно здесь https://semver.org/lang/ru/
 */
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+//import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Arrays;
@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class Task4 {
 
     public static void main(String[] args) {
-        String lovestVersion = minVersion("1.1.1.1", "1.1.2.1");
+        String lovestVersion = minVersion("1.0", "2.0");
         System.out.println(lovestVersion);
     }
 
@@ -50,7 +50,7 @@ public class Task4 {
                 }
             }
             if (minVersion=="Latest version of the software: "){ //checking if compared versions are similar
-                minVersion=("Compared versions are equal.\nLatest version of the software: "+v1);
+                minVersion=("івіCompared versions are equal.\nLatest version of the software: "+v1);
             }
         return minVersion;
     }
