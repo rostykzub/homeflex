@@ -15,7 +15,7 @@ public class Rozetka {
         //System.out.println(name);
         String goodname = name.replaceAll("[-+)( ]","");
         System.out.println(goodname);
-        //driver.quit();
+        driver.quit();
 
     }
 }
