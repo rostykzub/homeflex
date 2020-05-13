@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class Task4 {
 
     public static void main(String[] args) {
-        String lovestVersion = minVersion("1.0", "2.0");
+        String lovestVersion = minVersion("2.8.5", "1.8.9");
         System.out.println(lovestVersion);
     }
 

@@ -1,13 +1,15 @@
 package lessonTestng;
 
 import lesson1.Task1;
+import lesson1.Task5;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TestWithDataProvider {
 
-// I have chosen [Lesson 1][Task 1] to be tested using Data Provider.
+// I have chosen [Lesson 1][Task 1] and [Task 5] to be tested using Data Provider.
+    //Test for [Task 1]: Testing min value function
 
     @Test(dataProvider = "minData")
     public void testTask1(int a,int b,int c,int expectedResult){
@@ -25,6 +27,27 @@ public class TestWithDataProvider {
         };
 
     }
+
+    //Test for [Task 5]: Testing reverse string function
+
+    @Test(dataProvider = "notReversedName")
+    public void testTask5(String a,String expectedResult){
+        String actualResult = Task5.reverse(a);
+        Assert.assertEquals(expectedResult,actualResult);
+    }
+
+    @DataProvider(name="notReversedName")
+    public Object[][] getDataForReverseTest() {
+        return new Object[][]{
+                {"Maria", "airaM"},
+                {"Finn", "nniF"},
+                {"Ross", "ssoR"},
+                {"Andrew", "werdnA"},
+                {"   ", "   "},
+                {"123", "321"},
+        };
+    }
+
 
 }
 

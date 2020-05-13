@@ -9,7 +9,7 @@ package lesson1;
 public class Task5 {
     public static void main(String[] args) {
        System.out.println(reverse("HelloWorld!!!"));
-        System.out.println(reverse("Lubko zarkyi karetku"));
+       System.out.println(reverse("Maria is dezigner"));
 
     }
 
