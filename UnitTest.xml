@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="unitTests">
-    <parameter name="name" value="NameFromXML"></parameter>
+    <parameter name="name" value="FromXML"></parameter>
     <test name="unitTests">
         <classes>
             <class name="lessonTestng.TestTask1"></class>
