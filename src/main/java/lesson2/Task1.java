@@ -1,6 +1,5 @@
 package lesson2;
 
-import java.sql.SQLOutput;
 
 /**
  * Реализовать у класса Task1 переменные age (тип int),  name (тип String), ageGroup(тип String)
@@ -112,6 +111,4 @@ public class Task1 {
     private void setAgeGroup (String ageGroup) {
         this.ageGroup = ageGroup;
     }
-
-
 }

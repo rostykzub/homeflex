@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="unitTests">
+    <parameter name="name" value="NameFromXML"></parameter>
+    <test name="unitTests">
+        <classes>
+            <class name="lessonTestng.TestTask1"></class>
+            <class name="lessonTestng.TestTask2"></class>
+            <class name="lessonTestng.TestTask5"></class>
+        </classes>
+    </test>
+</suite>

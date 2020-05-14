@@ -6,20 +6,25 @@ System.out.println, System.out.print можно использовать тол�
 для этого нужно воспользоваться циклом for
 */
 
+
 public class Task2 {
 
     public static void main(String[] args) {
-        printMyNamex10();
+        printMyNamex10("Ross");
     }
 
-    public static void printMyNamex10 (){
-        String s = "Ross ";
-            for (int j=0;j<5;j++) {
+    public static String printMyNamex10 (String name){
+        String test = "";
 
-                for (int i=0;i<10;i++){
-                System.out.print(s);
+        for (int j=0;j<5;j++) {
+            for (int i = 0; i <= 10; i++) {
+                if (i <= 9) {
+                    test = test + name + ' ';
+                } else
+                    test = test.substring(0,test.length()-1) + "\n";
             }
-            System.out.println();
         }
+        System.out.print(test);
+        return test;
     }
 }
