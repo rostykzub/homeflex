@@ -21,15 +21,15 @@ public class TestTask2 {
         Assert.assertEquals(expectedResult,actualResult);
     }
 
-    //Test 2 - Testing Lines amount - should always be '6'
+    //Test 2 - Testing Lines amount - should always be '5'
     @Parameters({"name"})
     @Test
     public void testLinesAmount(@Optional("testOptional") String name) {
-        int expectedResult = 6;
+        int expectedResult = 5;
         String lineBreak = "\n";
         int actualResult = countLines(Task2.printMyNamex10(name));
-        System.out.println("Expected line breaks count - "+expectedResult);
-        System.out.println("Actual line breaks count - "+actualResult);
+        System.out.println("Expected lines count - "+expectedResult);
+        System.out.println("Actual lines count - "+actualResult);
         Assert.assertEquals(actualResult,expectedResult);
     }
 
@@ -48,6 +48,6 @@ public class TestTask2 {
 
     //Method that detects lines count int the text string
     private static int countLines(String s) {
-        return (s + " ").split("\r?\n").length;
+        return (s + " ").split("\r?\n").length-1;
     }
 }
