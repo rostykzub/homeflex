@@ -2,7 +2,6 @@ package lessonSelenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Rozetka {
@@ -16,6 +15,5 @@ public class Rozetka {
         String goodname = name.replaceAll("[-+)( ]","");
         System.out.println(goodname);
         driver.quit();
-
     }
 }
